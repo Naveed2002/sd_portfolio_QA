@@ -1,0 +1,164 @@
+.projects {
+  background: var(--bg-primary);
+}
+
+.projects__grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+
+/* Card with minimal distinctive design */
+.project-card {
+  position: relative;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.7), rgba(248, 248, 248, 0.7));
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  border-left: 4px solid rgba(0, 0, 0, 0.2);
+  border-radius: var(--radius-md);
+  padding: 28px;
+  overflow: hidden;
+  transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: default;
+  animation: fadeInUp 0.6s ease-out both;
+}
+
+.project-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 4px;
+  bottom: 0;
+  width: 2px;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.1), transparent);
+  opacity: 0;
+  transition: opacity 0.35s ease;
+  pointer-events: none;
+}
+
+.project-card:hover {
+  border-left-color: rgba(0, 0, 0, 0.4);
+  transform: translateY(-8px);
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.08);
+}
+
+.project-card:hover::before {
+  opacity: 1;
+}
+
+.project-card__accent {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, #000000, transparent);
+  opacity: 0;
+  transition: opacity 0.35s ease;
+}
+
+.project-card:hover .project-card__accent {
+  opacity: 0.6;
+}
+
+.project-card__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: fl16px;
+  padding-bottom: 12px;
+  border-bottom: 1px dotted rgba(0, 0, 0, 0.1)tart;
+  margin-bottom: 20px;
+}
+
+.project-card__icon {
+  font-size: 36px;
+  line-height: 1;
+  transition: transform 0.35s ease;
+}
+scale(1.15
+.project-card:hover .project-card__icon {
+  transform: rotate(10deg) scale(1.1);
+}
+
+.project-card__number {
+  font-family: var(--font-mono);
+  font-size: 13px;
+  color: var(--text-dim);
+  font-weight: 500;
+}
+
+.project-card__name {
+  font-family: var(--font-display);
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 4px;
+  line-height: 1.2;
+  transition: color 0.35s ease;
+}
+
+.project-card:hover .project-card__name {
+  color: var(--accent);
+}
+
+.project-card__subtitle {
+  font-size: 13.5px;
+  color: var(--text-dim);
+  font-weight: 500;
+  margin-bottom: 12px;
+  font-family: var(--font-mono);
+}
+
+.project-card__desc {
+  font-size: 14px;
+  color: var(--text-muted);
+  line-height: 1.75;
+  margin-bottom: 16px;
+}
+
+/* QA badges */
+.project-card__qa {
+  margin-bottom: 14px;
+  padding-bottom: 12px;
+  border-bottom: 1px dashed rgba(0, 0, 0, 0.08);
+}
+
+.project-card__qa-label {
+  font-family: var(--font-mono);
+  font-size: 10.5px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--accent);
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+.project-card__qa-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.project-card__qa-tag {
+  font-size: 12px;
+  color: var(--text-dim);
+  background: rgba(0, 0, 0, 0.02);
+  border-left: 2px solid var(--accent);
+  padding: 4px 8px;
+  border-radius: 2px;
+  font-weight: 500;
+}
+}
+
+.project-card__tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+}
+
+@media (max-width: 768px) {
+  .projects__grid {
+    grid-template-columns: 1fr;
+  }
+}
