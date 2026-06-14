@@ -1,34 +1,38 @@
+@import './animations.css';
+
 /* ============================================================
    DESIGN TOKENS
    ============================================================ */
 :root {
-  --bg-primary:   #FAFAFA;
+  --bg-primary: #FAFAFA;
   --bg-secondary: #F5F5F5;
-  --bg-card:      #FFFFFF;
-  --bg-card-hover:#F9F9F9;
-  --accent:       #000000;
+  --bg-card: #FFFFFF;
+  --bg-card-hover: #F9F9F9;
+  --accent: #000000;
   --accent-light: #333333;
-  --accent-glow:  rgba(0, 0, 0, 0.08);
-  --accent-subtle:rgba(0, 0, 0, 0.03);
+  --accent-glow: rgba(0, 0, 0, 0.08);
+  --accent-subtle: rgba(0, 0, 0, 0.03);
   --text-primary: #1A1A1A;
-  --text-muted:   #666666;
-  --text-dim:     #999999;
-  --border:       rgba(0,0,0,0.08);
-  --border-accent:rgba(0,0,0,0.15);
-  --success:      #4CAF50;
+  --text-muted: #666666;
+  --text-dim: #999999;
+  --border: rgba(0, 0, 0, 0.08);
+  --border-accent: rgba(0, 0, 0, 0.15);
+  --success: #4CAF50;
   --font-display: 'Space Grotesk', sans-serif;
-  --font-body:    'Inter', sans-serif;
-  --font-mono:    'JetBrains Mono', monospace;
-  --radius-sm:    6px;
-  --radius-md:    12px;
-  --radius-lg:    20px;
-  --transition:   0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  --font-body: 'Inter', sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+  --radius-sm: 6px;
+  --radius-md: 12px;
+  --radius-lg: 20px;
+  --transition: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* ============================================================
    RESET & BASE
    ============================================================ */
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -59,14 +63,17 @@ img {
   display: block;
 }
 
-/* Import animations */
-@import './animations.css';
-
 /* ============================================================
    SCROLLBAR
    ============================================================ */
-::-webkit-scrollbar { width: 6px; }
-::-webkit-scrollbar-track { background: var(--bg-primary); }
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-primary);
+}
+
 ::-webkit-scrollbar-thumb {
   background: var(--accent);
   border-radius: 3px;
@@ -145,8 +152,15 @@ img {
 
 /* Fade-in animation */
 @keyframes fadeUp {
-  from { opacity: 0; transform: translateY(24px); }
-  to   { opacity: 1; transform: translateY(0); }
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .fade-up {
@@ -154,5 +168,7 @@ img {
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .fade-up { animation: none; }
+  .fade-up {
+    animation: none;
+  }
 }

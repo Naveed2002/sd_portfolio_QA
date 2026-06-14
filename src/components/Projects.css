@@ -64,9 +64,9 @@
 .project-card__top {
   display: flex;
   justify-content: space-between;
-  align-items: fl16px;
+  align-items: flex-start;
   padding-bottom: 12px;
-  border-bottom: 1px dotted rgba(0, 0, 0, 0.1)tart;
+  border-bottom: 1px dotted rgba(0, 0, 0, 0.1);
   margin-bottom: 20px;
 }
 
@@ -75,7 +75,7 @@
   line-height: 1;
   transition: transform 0.35s ease;
 }
-scale(1.15
+
 .project-card:hover .project-card__icon {
   transform: rotate(10deg) scale(1.1);
 }
@@ -148,7 +148,6 @@ scale(1.15
   padding: 4px 8px;
   border-radius: 2px;
   font-weight: 500;
-}
 }
 
 .project-card__tags {

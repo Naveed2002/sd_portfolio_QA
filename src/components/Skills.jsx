@@ -42,17 +42,18 @@ const categories = [
 export default function Skills() {
   const [active, setActive] = useState('qa')
 
-  const current = categories.find(c => c.id === active)
+  const current = categories.find(c => c.id === active) || categories[0]
 
   return (
     <section className="skills section" id="skills">
       <div className="container">
         <p className="section-label">Technical skills</p>
         <h2 className="section-title">What I work with</h2>
+
         <div className="divider" />
 
         <div className="skills__layout">
-          {/* Sidebar tabs */}
+          {/* Tabs */}
           <nav className="skills__tabs">
             {categories.map(cat => (
               <button
@@ -66,7 +67,7 @@ export default function Skills() {
             ))}
           </nav>
 
-          {/* Tag cloud */}
+          {/* Skills panel */}
           <div className="skills__panel">
             <div className="skills__tags">
               {current.skills.map((skill, i) => (
@@ -85,9 +86,8 @@ export default function Skills() {
               <div className="skills__highlight">
                 <p className="skills__highlight-label">Core specialization</p>
                 <p className="skills__highlight-text">
-                  My QA toolkit covers the full testing spectrum — from writing precise test cases
-                  and executing manual tests, to automating flows with Selenium and Playwright,
-                  and tracking issues efficiently in Jira.
+                  My QA toolkit covers manual testing, automation testing,
+                  API testing, and structured bug tracking using industry tools.
                 </p>
               </div>
             )}

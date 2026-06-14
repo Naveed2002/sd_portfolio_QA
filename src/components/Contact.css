@@ -129,14 +129,6 @@ a.contact__link-value:hover { color: var(--text-primary); }
 .contact__social:hover::before {
   opacity: 1;
 }
-  transition: all var(--transition);
-}
-
-.contact__social:hover {
-  color: var(--accent-light);
-  border-color: var(--accent);
-  background: var(--accent-subtle);
-}
 
 /* Terminal */
 .contact__terminal {
