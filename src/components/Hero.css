@@ -12,7 +12,7 @@
   position: absolute;
   inset: 0;
   background-image:
-    radial-gradient(circle, rgba(255,255,255,0.04) 1px, transparent 1px),
+    radial-gradient(circle, rgba(30, 30, 30, 0.04) 1px, transparent 1px),
     radial-gradient(circle, rgba(124,58,237,0.03) 1px, transparent 1px);
   background-size: 32px 32px, 64px 64px;
   background-position: 0 0, 16px 16px;
@@ -30,7 +30,7 @@
   position: absolute;
   width: 600px;
   height: 600px;
-  background: radial-gradient(circle, rgba(0,0,0,0.08) 0%, transparent 70%);
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.08) 0%, transparent 70%);
   pointer-events: none;
   filter: blur(40px);
   animation: float 8s ease-in-out infinite;
@@ -39,7 +39,7 @@
 .hero__orb--1 {
   top: -150px;
   right: -150px;
-  background: radial-gradient(circle, rgba(0,0,0,0.1) 0%, transparent 70%);
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.1) 0%, transparent 70%);
   animation: float 10s ease-in-out infinite;
 }
 
@@ -48,7 +48,7 @@
   left: -200px;
   width: 500px;
   height: 500px;
-  background: radial-gradient(circle, rgba(0,0,0,0.07) 0%, transparent 70%);
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.07) 0%, transparent 70%);
   animation: float 12s ease-in-out infinite reverse;
 }
 
@@ -57,7 +57,7 @@
   right: 10%;
   width: 400px;
   height: 400px;
-  background: radial-gradient(circle, rgba(0,0,0,0.06) 0%, transparent 70%);
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.06) 0%, transparent 70%);
   animation: float 14s ease-in-out infinite;
 }
 
@@ -77,9 +77,9 @@
   font-family: var(--font-mono);
   font-size: 12px;
   color: var(--text-muted);
-  background: rgba(0, 0, 0, 0.02);
+  background: rgba(255, 255, 255, 0.02);
   backdrop-filter: blur(10px);
-  border: 1px solid rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 100px;
   padding: 8px 14px;
   margin-bottom: 28px;
@@ -87,7 +87,7 @@
 }
 
 .hero__badge:hover {
-  border-color: rgba(0, 0, 0, 0.2);
+  border-color: rgba(255, 255, 255, 0.2);
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
 }
 
@@ -312,8 +312,8 @@
   align-items: center;
   gap: 2px;
   padding: 8px 14px;
-  background: rgba(0, 0, 0, 0.03);
-  border: 1px solid rgba(0, 0, 0, 0.1);
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 6px;
   min-height: 32px;
 }
@@ -376,7 +376,7 @@
 .btn--secondary:hover {
   border-color: var(--accent);
   color: var(--accent);
-  background: rgba(0, 0, 0, 0.02);
+  background: rgba(255, 255, 255, 0.02);
 }
 
 /* Scroll Indicator */
@@ -399,7 +399,7 @@
 .scroll-indicator {
   width: 20px;
   height: 30px;
-  border: 1.5px solid rgba(0, 0, 0, 0.2);
+  border: 1.5px solid rgba(255, 255, 255, 0.2);
   border-radius: 10px;
   display: flex;
   justify-content: center;

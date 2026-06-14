@@ -265,13 +265,13 @@ button, a, input, select, textarea {
 
 /* Glass morphism effect */
 .glass {
-  background: rgba(255, 255, 255, 0.05);
+  background: rgba(30, 30, 30, 0.05);
   backdrop-filter: blur(10px);
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(30, 30, 30, 0.1);
   border-radius: 10px;
 }
 
 /* Neon glow effect */
 .neon-glow {
-  box-shadow: 0 0 20px rgba(255, 255, 255, 0.2), inset 0 0 20px rgba(255, 255, 255, 0.05);
+  box-shadow: 0 0 20px rgba(30, 30, 30, 0.2), inset 0 0 20px rgba(30, 30, 30, 0.05);
 }
