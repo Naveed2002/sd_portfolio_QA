@@ -11,6 +11,8 @@
 /* Card with minimal distinctive design */
 .project-card {
   position: relative;
+  display: flex;
+  flex-direction: column;
   background: linear-gradient(135deg, rgba(30, 30, 30, 0.7), rgba(20, 20, 20, 0.7));
   backdrop-filter: blur(10px);
   border: 1px solid rgba(255, 255, 255, 0.08);
@@ -154,6 +156,38 @@
   display: flex;
   flex-wrap: wrap;
   gap: 7px;
+  margin-bottom: 18px;
+}
+
+.project-card__link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  align-self: flex-start;
+  gap: 8px;
+  min-height: 38px;
+  margin-top: auto;
+  padding: 9px 14px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: var(--radius-sm);
+  color: var(--bg-primary);
+  background: var(--accent);
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 1;
+  transition: transform 0.25s ease, background 0.25s ease, border-color 0.25s ease;
+}
+
+.project-card__link:hover,
+.project-card__link:focus-visible {
+  background: var(--accent-light);
+  border-color: rgba(255, 255, 255, 0.32);
+  transform: translateY(-2px);
+}
+
+.project-card__link:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
 }
 
 @media (max-width: 768px) {

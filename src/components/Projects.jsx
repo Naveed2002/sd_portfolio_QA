@@ -11,6 +11,7 @@ const projects = [
     tags: ['MERN Stack', 'Docker', 'Kubernetes', 'Nginx', 'JWT', 'Postman'],
     qa: ['API Testing', 'Functional Validation', 'Debugging'],
     color: '#10B981',
+    link: 'https://github.com/Senith001/medigo',
   },
   {
     id: 2,
@@ -21,6 +22,7 @@ const projects = [
     tags: ['MERN Stack', 'JWT', 'Postman', 'GitHub'],
     qa: ['Unit Testing', 'Frontend Testing', 'API Testing', 'Functionality Validation'],
     color: '#F59E0B',
+    link: 'https://github.com/Senith001/energymate',
   },
   {
     id: 3,
@@ -31,6 +33,7 @@ const projects = [
     tags: ['MERN Stack', 'MongoDB', 'React', 'Node.js'],
     qa: ['Functionality Testing', 'Validation'],
     color: '#7C3AED',
+    link: 'https://github.com/ravindu-sliit/RiyaGuru',
   },
   {
     id: 4,
@@ -113,6 +116,18 @@ export default function Projects() {
                   </span>
                 ))}
               </div>
+
+              {p.link && (
+                <a
+                  href={p.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="project-card__link"
+                  aria-label={`View ${p.name} project on GitHub`}
+                >
+                  View Project <span aria-hidden="true">↗</span>
+                </a>
+              )}
 
               <div className="project-card__accent" aria-hidden="true" />
             </article>
