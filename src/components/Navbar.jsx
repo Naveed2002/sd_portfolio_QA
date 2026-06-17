@@ -38,7 +38,7 @@ export default function Navbar() {
             </a>
           ))}
           <a
-            href="mailto:nethmisadeesha2002@gmail.com"
+            href="#contact"
             className="navbar__cta"
             onClick={() => setMenuOpen(false)}
           >

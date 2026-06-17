@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import './Hero.css'
+import cvPdf from '../assets/cv-pdf/Nethmi_Sadeesha_CV.pdf'
 
 const roles = [
   'QA Engineer',
@@ -68,6 +69,13 @@ export default function Hero() {
 
         <div className="hero__actions fade-up" style={{ animationDelay: '0.4s' }}>
           <a href="#projects" className="btn btn--primary">View Projects</a>
+          <a
+            href={cvPdf}
+            download="Nethmi_Sadeesha_CV.pdf"
+            className="btn btn--ghost"
+          >
+            Download CV
+          </a>
           <a
             href="https://www.linkedin.com/in/nethmi-sadeesha-3a9266399"
             target="_blank"
