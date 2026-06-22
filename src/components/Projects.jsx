@@ -45,6 +45,22 @@ const projects = [
     qa: ['Manual Testing', 'Validation'],
     color: '#EC4899',
   },
+  {
+    id: 5,
+    name: 'REST Assured API Testing Framework',
+    subtitle: 'Java API Automation Framework',
+    description:
+      'Developed a REST Assured API testing framework to automate RESTful web service validation. Implemented GET, POST, PUT, and DELETE test scenarios with path parameter, query parameter, and response body validation, all executing successfully through Maven with zero failures.',
+    tags: ['Java', 'REST Assured', 'TestNG', 'Maven', 'GitHub'],
+    qa: [
+      'API Automation',
+      'Request Validation',
+      'Response Validation',
+      'TestNG Assertions',
+    ],
+    color: '#38BDF8',
+    link: 'https://github.com/NSadeesha/RESTAssuredDemo',
+  },
 ]
 
 export default function Projects() {

@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import './Hero.css'
-import cvPdf from '../assets/cv-pdf/Nethmi_Sadeesha_CV.pdf'
+import cvPdf from '../assets/cv-pdf/Nethmi_Sadeesha_CV 2.pdf'
 
 const roles = [
   'QA Engineer',
@@ -88,7 +88,7 @@ export default function Hero() {
 
         <div className="hero__stats fade-up" style={{ animationDelay: '0.5s' }}>
           {[
-            { value: '4+', label: 'Projects Built' },
+            { value: '5+', label: 'Projects Built' },
             { value: '7+', label: 'Languages' },
             { value: '2027', label: 'Expected Grad' },
             { value: 'SLIIT', label: 'University' },
